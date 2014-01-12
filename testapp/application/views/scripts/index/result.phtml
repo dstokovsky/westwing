@@ -1,0 +1,6 @@
+Thank you <strong><?php echo $this->email;?></strong>. The result of your query is:<br /><br />
+<?php
+    foreach ( $this->data as $row ){
+        print "<i>" . implode( ",", $row ) . "</i><br />";
+    }
+?>
